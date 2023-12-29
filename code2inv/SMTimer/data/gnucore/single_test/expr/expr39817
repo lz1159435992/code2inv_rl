@@ -1,0 +1,11 @@
+{
+    "filename": "expr",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_strtoimax_1263_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_strtoimax_964_64 () (_ BitVec 64))\n(assert\n (not (= unconstrained_ret_strtoimax_1263_64 (_ bv0 64))))\n(assert\n (let (($x208260 (= unconstrained_ret_strtoimax_964_64 (_ bv0 64))))\n (not $x208260)))\n(assert\n (let ((?x44165 ((_ extract 63 63) unconstrained_ret_strtoimax_964_64)))\n (let ((?x55529 ((_ extract 63 63) unconstrained_ret_strtoimax_1263_64)))\n (let ((?x111559 (bvxor ?x55529 ?x44165)))\n (let ((?x144381 (bvmul unconstrained_ret_strtoimax_1263_64 unconstrained_ret_strtoimax_964_64)))\n (let ((?x205106 ((_ extract 63 63) ?x144381)))\n (= ?x205106 ?x111559)))))))\n(assert\n (let ((?x44165 ((_ extract 63 63) unconstrained_ret_strtoimax_964_64)))\n (let ((?x28392 (concat ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 ?x44165 unconstrained_ret_strtoimax_964_64)))\n (let ((?x144381 (bvmul unconstrained_ret_strtoimax_1263_64 unconstrained_ret_strtoimax_964_64)))\n (let ((?x225085 (bvashr ?x144381 (_ bv63 64))))\n (let ((?x212450 (concat ?x225085 ?x144381)))\n (let ((?x222188 (bvsdiv ?x212450 ?x28392)))\n (let ((?x473912 ((_ extract 63 0) ?x222188)))\n (= ?x473912 unconstrained_ret_strtoimax_1263_64)))))))))\n(check-sat)\n",
+    "time": 1.7796218395233154,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=12, tm_hour=16, tm_min=12, tm_sec=5, tm_wday=5, tm_yday=347, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

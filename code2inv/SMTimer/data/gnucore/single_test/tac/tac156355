@@ -1,0 +1,11 @@
+{
+    "filename": "tac",
+    "script": "",
+    "time": 1.016545295715332,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=21, tm_min=1, tm_sec=14, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

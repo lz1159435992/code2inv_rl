@@ -1,0 +1,11 @@
+{
+    "filename": "wc",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun k!55520900 () (_ BitVec 64))\n(assert\n (bvule (_ bv10 64) k!55520900))\n(assert\n (let ((?x579790 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!55520900)))))\n (bvule (_ bv10 61) ?x579790)))\n(assert\n (let ((?x2080 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!55520900)))))))\n (let ((?x521216 ((_ extract 127 67) ?x2080)))\n (bvule (_ bv10 61) ?x521216))))\n(assert\n (let ((?x2080 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!55520900)))))))\n (let ((?x521216 ((_ extract 127 67) ?x2080)))\n (let ((?x487109 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x521216)))))\n (bvule (_ bv10 61) ?x487109)))))\n(assert\n (let ((?x2080 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!55520900)))))))\n (let ((?x521216 ((_ extract 127 67) ?x2080)))\n (let ((?x487109 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x521216)))))\n (let ((?x456964 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x487109)))))\n (bvule (_ bv10 61) ?x456964))))))\n(assert\n (let ((?x2080 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!55520900)))))))\n (let ((?x521216 ((_ extract 127 67) ?x2080)))\n (let ((?x487109 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x521216)))))\n (let ((?x456964 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x487109)))))\n (not (bvule (_ bv10 61) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x456964))))))))))\n(check-sat)\n",
+    "time": 100.03080916404724,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=17, tm_min=5, tm_sec=53, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            176.22886180877686
+        ]
+    }
+}

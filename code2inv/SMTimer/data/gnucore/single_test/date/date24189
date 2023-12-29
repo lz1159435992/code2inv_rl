@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mktime_1990_64 () (_ BitVec 64))\n(assert\n (let ((?x1265341 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) unconstrained_ret_mktime_1990_64))))))\n (let ((?x279717 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) unconstrained_ret_mktime_1990_64))) (_ bv2 64))))\n (not (= ?x279717 (bvmul (_ bv18446744073709551615 64) ?x1265341))))))\n(assert\n (let ((?x1265341 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) unconstrained_ret_mktime_1990_64))))))\n (let ((?x279717 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) unconstrained_ret_mktime_1990_64))) (_ bv2 64))))\n (let ((?x339798 (bvadd ?x279717 ?x1265341)))\n (let ((?x301496 ((_ extract 63 63) ?x339798)))\n (let ((?x1441163 (concat ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x301496 ?x339798)))\n (let ((?x1323466 (bvmul (_ bv7378697629483820647 128) ?x1441163)))\n (= (bvashr ((_ extract 127 64) ?x1323466) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x1323466)))))))))))\n(assert\n (let ((?x297909 ((_ extract 63 63) unconstrained_ret_mktime_1990_64)))\n (= ?x297909 (_ bv0 1))))\n(check-sat)\n",
+    "time": 5.759415626525879,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=22, tm_min=23, tm_sec=0, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            3.442232370376587
+        ]
+    }
+}

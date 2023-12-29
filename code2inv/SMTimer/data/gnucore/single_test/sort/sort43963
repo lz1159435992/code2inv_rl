@@ -1,0 +1,11 @@
+{
+    "filename": "sort",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_fread_unlocked_2555_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_2839_64 () (_ BitVec 64))\n(assert\n (let (($x66159 (= unconstrained_ret_fread_unlocked_2555_64 (_ bv7944 64))))\n (not $x66159)))\n(assert\n (let ((?x3199446 ((_ extract 5 0) unconstrained_ret_fread_unlocked_2555_64)))\n (let ((?x1402554 (bvmul (_ bv63 6) ?x3199446)))\n (let ((?x763435 (bvadd (_ bv32 6) ?x1402554)))\n (let (($x2871681 (bvule ?x763435 (_ bv33 6))))\n (let (($x1377988 (not $x2871681)))\n (let ((?x105645 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_2555_64)))\n (let ((?x121915 (bvadd (_ bv262176 64) ?x105645)))\n (let ((?x2189365 ((_ extract 63 6) ?x121915)))\n (let (($x3185238 (= ?x2189365 (_ bv0 58))))\n (let (($x775643 (not $x3185238)))\n (or $x775643 $x1377988))))))))))))\n(assert\n (let ((?x105645 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_2555_64)))\n (let ((?x3199102 (bvadd (_ bv262175 64) ?x105645)))\n (let ((?x2181496 (concat (_ bv0 64) ?x3199102)))\n (let ((?x759000 (bvudiv ?x2181496 (_ bv33 128))))\n (let ((?x3601483 ((_ extract 63 0) ?x759000)))\n (let (($x1409846 (= unconstrained_ret_fread_unlocked_2839_64 ?x3601483)))\n (not $x1409846))))))))\n(assert\n (let ((?x1409103 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_2839_64)))\n (let (($x1408074 (= unconstrained_ret_fread_unlocked_2555_64 ?x1409103)))\n (not $x1408074))))\n(assert\n (= unconstrained_ret_fread_unlocked_2555_64 (bvadd (_ bv18446744070488321868 64) (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_2839_64))))\n(check-sat)\n",
+    "time": 1.06243896484375,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=13, tm_hour=6, tm_min=51, tm_sec=56, tm_wday=6, tm_yday=348, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.11508536338806152
+        ]
+    }
+}

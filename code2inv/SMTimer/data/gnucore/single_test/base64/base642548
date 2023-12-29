@@ -1,0 +1,11 @@
+{
+    "filename": "base64",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_fread_unlocked_870_64 () (_ BitVec 64))\n(assert\n (let (($x7923 (= unconstrained_ret_fread_unlocked_870_64 (_ bv0 64))))\n (not $x7923)))\n(assert\n (let ((?x9904 (bvadd (_ bv2 64) unconstrained_ret_fread_unlocked_870_64)))\n (let ((?x14870 (concat (_ bv0 64) ?x9904)))\n (let ((?x15208 (bvmul (_ bv12297829382473034411 128) ?x14870)))\n (let ((?x15215 ((_ extract 126 65) ?x15208)))\n (= ?x15215 (_ bv0 62)))))))\n(check-sat)\n",
+    "time": 1.4443655014038086,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=14, tm_min=38, tm_sec=9, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.2619171142578125
+        ]
+    }
+}

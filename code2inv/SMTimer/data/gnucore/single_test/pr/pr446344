@@ -1,0 +1,11 @@
+{
+    "filename": "pr",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_ffffffffffffffcc_16735_32 () (_ BitVec 32))\n(assert\n (let (($x282359 (bvsle (_ bv4294965396 32) mem_ffffffffffffffcc_16735_32)))\n (not $x282359)))\n(assert\n (let ((?x362720 (bvmul (_ bv4294967295 32) mem_ffffffffffffffcc_16735_32)))\n (let ((?x387271 (bvadd (_ bv4294965396 32) ?x362720)))\n (let ((?x320616 (concat (_ bv0 32) ?x387271)))\n (let ((?x150717 (bvmul (_ bv3435973837 64) ?x320616)))\n (let ((?x48254 ((_ extract 63 35) ?x150717)))\n (let (($x188697 (= ?x48254 (_ bv0 29))))\n (not $x188697))))))))\n(assert\n (let ((?x362720 (bvmul (_ bv4294967295 32) mem_ffffffffffffffcc_16735_32)))\n (let ((?x387271 (bvadd (_ bv4294965396 32) ?x362720)))\n (let ((?x320616 (concat (_ bv0 32) ?x387271)))\n (let ((?x150717 (bvmul (_ bv3435973837 64) ?x320616)))\n (let ((?x48254 ((_ extract 63 35) ?x150717)))\n (let ((?x269623 (concat (_ bv0 35) ?x48254)))\n (let ((?x325519 (bvmul (_ bv3435973837 64) ?x269623)))\n (let ((?x219382 ((_ extract 63 35) ?x325519)))\n (let (($x77180 (= ?x219382 (_ bv0 29))))\n (not $x77180)))))))))))\n(assert\n (let ((?x362720 (bvmul (_ bv4294967295 32) mem_ffffffffffffffcc_16735_32)))\n (let ((?x387271 (bvadd (_ bv4294965396 32) ?x362720)))\n (let ((?x320616 (concat (_ bv0 32) ?x387271)))\n (let ((?x150717 (bvmul (_ bv3435973837 64) ?x320616)))\n (let ((?x48254 ((_ extract 63 35) ?x150717)))\n (let ((?x269623 (concat (_ bv0 35) ?x48254)))\n (let ((?x325519 (bvmul (_ bv3435973837 64) ?x269623)))\n (let ((?x219382 ((_ extract 63 35) ?x325519)))\n (let ((?x47365 (concat (_ bv0 35) ?x219382)))\n (let ((?x320167 (bvmul (_ bv3435973837 64) ?x47365)))\n (let ((?x197548 ((_ extract 63 35) ?x320167)))\n (= ?x197548 (_ bv0 29))))))))))))))\n(check-sat)\n",
+    "time": 1.3807787895202637,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=3, tm_min=42, tm_sec=5, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.5633275508880615
+        ]
+    }
+}

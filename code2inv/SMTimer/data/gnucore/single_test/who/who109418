@@ -1,0 +1,11 @@
+{
+    "filename": "who",
+    "script": "",
+    "time": 1.0021536350250244,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=18, tm_min=13, tm_sec=59, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

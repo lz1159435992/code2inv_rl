@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun tv_sec_2532_64 () (_ BitVec 64))\n(assert\n (let ((?x1828170 ((_ extract 63 63) tv_sec_2532_64)))\n (= ?x1828170 (_ bv0 1))))\n(assert\n (let ((?x1620714 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2532_64))))))\n (let ((?x61502 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2532_64))) (_ bv2 64))))\n (not (= ?x61502 (bvmul (_ bv18446744073709551615 64) ?x1620714))))))\n(assert\n (let ((?x1620714 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2532_64))))))\n (let ((?x61502 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2532_64))) (_ bv2 64))))\n (let ((?x1223354 (bvadd ?x61502 ?x1620714)))\n (let ((?x729607 ((_ extract 63 63) ?x1223354)))\n (let ((?x1010666 (concat ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x729607 ?x1223354)))\n (let ((?x1514006 (bvmul (_ bv7378697629483820647 128) ?x1010666)))\n (= (bvashr ((_ extract 127 64) ?x1514006) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x1514006)))))))))))\n(check-sat)\n",
+    "time": 1.3562393188476562,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=1, tm_min=6, tm_sec=45, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            11.848558187484741
+        ]
+    }
+}

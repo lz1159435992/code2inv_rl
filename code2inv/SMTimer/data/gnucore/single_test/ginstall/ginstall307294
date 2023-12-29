@@ -1,0 +1,11 @@
+{
+    "filename": "ginstall",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_7fffffffffef838_7128_64 () (_ BitVec 64))\n(assert\n (not (bvsle mem_7fffffffffef838_7128_64 (_ bv0 64))))\n(assert\n (= ((_ extract 63 62) mem_7fffffffffef838_7128_64) (_ bv0 2)))\n(assert\n (not (= mem_7fffffffffef838_7128_64 (_ bv0 64))))\n(assert\n (let ((?x212378 (concat (_ bv0 64) mem_7fffffffffef838_7128_64)))\n (let ((?x96680 (bvurem (_ bv4230835 128) ?x212378)))\n (let ((?x107658 ((_ extract 63 0) ?x96680)))\n (let (($x206439 (= ?x107658 (_ bv0 64))))\n (not $x206439))))))\n(assert\n (let ((?x212378 (concat (_ bv0 64) mem_7fffffffffef838_7128_64)))\n (let ((?x96680 (bvurem (_ bv4230835 128) ?x212378)))\n (let ((?x107658 ((_ extract 63 0) ?x96680)))\n (let ((?x725931 (concat (_ bv0 64) ?x107658)))\n (let ((?x723768 (bvurem ?x212378 ?x725931)))\n (let ((?x723057 ((_ extract 63 0) ?x723768)))\n (let (($x725190 (= ?x723057 (_ bv0 64))))\n (not $x725190)))))))))\n(assert\n (let ((?x25812 ((_ extract 61 0) mem_7fffffffffef838_7128_64)))\n (bvule ?x25812 (_ bv2305843009213693952 62))))\n(check-sat)\n",
+    "time": 2.0824131965637207,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=0, tm_min=39, tm_sec=56, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.7348263263702393
+        ]
+    }
+}

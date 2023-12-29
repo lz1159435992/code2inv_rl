@@ -1,0 +1,11 @@
+{
+    "filename": "expr",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_strtoimax_1323_64 () (_ BitVec 64))\n(assert\n (let (($x315412 (= unconstrained_ret_strtoimax_1323_64 (_ bv0 64))))\n (not $x315412)))\n(assert\n (let ((?x110440 ((_ extract 63 63) unconstrained_ret_strtoimax_1323_64)))\n (let ((?x575669 (bvmul (_ bv3221229387 64) unconstrained_ret_strtoimax_1323_64)))\n (let ((?x4870 ((_ extract 63 63) ?x575669)))\n (= ?x4870 ?x110440)))))\n(assert\n (let ((?x110440 ((_ extract 63 63) unconstrained_ret_strtoimax_1323_64)))\n (let ((?x145915 (concat ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 unconstrained_ret_strtoimax_1323_64)))\n (let ((?x575669 (bvmul (_ bv3221229387 64) unconstrained_ret_strtoimax_1323_64)))\n (let ((?x308936 (bvashr ?x575669 (_ bv63 64))))\n (let ((?x399595 (concat ?x308936 ?x575669)))\n (let ((?x167511 (bvsdiv ?x399595 ?x145915)))\n (let ((?x14882 ((_ extract 63 0) ?x167511)))\n (= ?x14882 (_ bv3221229387 64))))))))))\n(check-sat)\n",
+    "time": 1.2802150249481201,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=12, tm_hour=16, tm_min=37, tm_sec=37, tm_wday=5, tm_yday=347, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

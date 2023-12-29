@@ -1,0 +1,11 @@
+{
+    "filename": "uptime",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun sys_time_1118_64 () (_ BitVec 64))\n(assert\n (let (($x106929 (= sys_time_1118_64 (_ bv18446744073709551615 64))))\n (not $x106929)))\n(assert\n (let ((?x123665 ((_ extract 63 63) sys_time_1118_64)))\n (let ((?x50641 (concat ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 ?x123665 sys_time_1118_64)))\n (let ((?x129113 (bvmul (_ bv1749024623285053783 128) ?x50641)))\n (let ((?x50823 ((_ extract 127 127) ?x129113)))\n (let ((?x122356 (concat (_ bv0 63) ?x50823)))\n (let ((?x26912 ((_ extract 127 64) ?x129113)))\n (let ((?x15901 (bvashr ?x26912 (_ bv13 64))))\n (let ((?x91678 (bvadd ?x15901 ?x122356)))\n (let (($x94390 (bvsle ?x91678 (_ bv0 64))))\n (not $x94390)))))))))))\n(check-sat)\n",
+    "time": 7.200713396072388,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=9, tm_min=22, tm_sec=52, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.40905189514160156
+        ]
+    }
+}

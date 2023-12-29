@@ -1,0 +1,11 @@
+{
+    "filename": "who",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_ffffffffffffc02d_1952_2712 () (_ BitVec 2712))\n(assert\n (not (= ((_ extract 327 327) mem_ffffffffffffc02d_1952_2712) (_ bv0 1))))\n(assert\n (let ((?x37222 ((_ extract 351 344) mem_ffffffffffffc02d_1952_2712)))\n (let ((?x33984 ((_ extract 343 336) mem_ffffffffffffc02d_1952_2712)))\n (let ((?x35768 ((_ extract 335 328) mem_ffffffffffffc02d_1952_2712)))\n (let ((?x33467 ((_ extract 327 320) mem_ffffffffffffc02d_1952_2712)))\n (let ((?x6980 ((_ extract 327 327) mem_ffffffffffffc02d_1952_2712)))\n (let ((?x40372 (concat ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x6980 ?x33467 ?x35768 ?x33984 ?x37222)))\n (let ((?x40139 (bvmul (_ bv7378697629483820647 128) ?x40372)))\n (let ((?x26059 ((_ extract 127 127) ?x40139)))\n (let ((?x24771 (concat (_ bv0 63) ?x26059)))\n (let ((?x39095 ((_ extract 127 64) ?x40139)))\n (let ((?x37561 (bvashr ?x39095 (_ bv2 64))))\n (let (($x24695 (= ?x37561 (bvmul (_ bv18446744073709551615 64) ?x24771))))\n (not $x24695))))))))))))))\n(check-sat)\n",
+    "time": 1.287421464920044,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=14, tm_min=41, tm_sec=22, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            1.217829942703247
+        ]
+    }
+}

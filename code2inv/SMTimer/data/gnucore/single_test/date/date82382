@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mktime_2692_64 () (_ BitVec 64))\n(assert\n (let ((?x1871025 ((_ extract 63 63) unconstrained_ret_mktime_2692_64)))\n (= ?x1871025 (_ bv1 1))))\n(assert\n (let ((?x993082 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_2692_64))))))\n (let ((?x874959 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_2692_64))) (_ bv2 64))))\n (not (= ?x874959 (bvmul (_ bv18446744073709551615 64) ?x993082))))))\n(check-sat)\n",
+    "time": 2.648298740386963,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=1, tm_min=18, tm_sec=22, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.3139312267303467
+        ]
+    }
+}

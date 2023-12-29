@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mktime_1924_64 () (_ BitVec 64))\n(assert\n (let ((?x45400 ((_ extract 63 63) unconstrained_ret_mktime_1924_64)))\n (let (($x190329 (= ?x45400 (_ bv1 1))))\n (not $x190329))))\n(assert\n (let ((?x45400 ((_ extract 63 63) unconstrained_ret_mktime_1924_64)))\n (let ((?x43998 (concat ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 ?x45400 unconstrained_ret_mktime_1924_64)))\n (let ((?x68558 (bvmul (_ bv7378697629483820647 128) ?x43998)))\n (let ((?x64058 ((_ extract 127 127) ?x68558)))\n (let ((?x276375 (concat (_ bv0 63) ?x64058)))\n (let ((?x182834 (bvmul (_ bv18446744073709551615 64) ?x276375)))\n (let ((?x50178 ((_ extract 127 64) ?x68558)))\n (let ((?x76043 (bvashr ?x50178 (_ bv2 64))))\n (let (($x200593 (= ?x76043 ?x182834)))\n (not $x200593)))))))))))\n(check-sat)\n",
+    "time": 2.1522321701049805,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=41, tm_sec=45, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.27135419845581055
+        ]
+    }
+}

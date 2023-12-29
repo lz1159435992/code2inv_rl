@@ -1,0 +1,11 @@
+{
+    "filename": "wc",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun k!36629070 () (_ BitVec 64))\n(assert\n (bvule (_ bv10 64) k!36629070))\n(assert\n (let ((?x462612 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!36629070)))))\n (bvule (_ bv10 61) ?x462612)))\n(assert\n (let ((?x427092 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!36629070)))))))\n (bvule (_ bv10 61) ((_ extract 127 67) ?x427092))))\n(check-sat)\n",
+    "time": 1.7197575569152832,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=14, tm_min=18, tm_sec=32, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            8.7154381275177
+        ]
+    }
+}

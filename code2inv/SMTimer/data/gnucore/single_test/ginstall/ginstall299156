@@ -1,0 +1,11 @@
+{
+    "filename": "ginstall",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun k!162018000 () (_ BitVec 3))\n(assert\n (not (= k!162018000 (_ bv0 3))))\n(assert\n (not (= ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!162018000))) (_ bv0 64))))\n(assert\n (let ((?x21045 ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!162018000)))))\n (let ((?x85605 (concat (_ bv0 64) ?x21045)))\n (let ((?x71456 (concat (_ bv0 125) k!162018000)))\n (let ((?x157747 ((_ extract 63 0) (bvurem ?x71456 ?x85605))))\n (not (= ?x157747 (_ bv0 64))))))))\n(assert\n (let ((?x21045 ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!162018000)))))\n (let ((?x85605 (concat (_ bv0 64) ?x21045)))\n (let ((?x71456 (concat (_ bv0 125) k!162018000)))\n (let ((?x157747 ((_ extract 63 0) (bvurem ?x71456 ?x85605))))\n (not (= ((_ extract 63 0) (bvurem ?x85605 (concat (_ bv0 64) ?x157747))) (_ bv0 64))))))))\n(check-sat)\n",
+    "time": 3.4325640201568604,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=0, tm_min=27, tm_sec=57, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.3261227607727051
+        ]
+    }
+}

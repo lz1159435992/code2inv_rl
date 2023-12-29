@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun tv_sec_1571_64 () (_ BitVec 64))\n(assert\n (let ((?x61364 ((_ extract 63 63) tv_sec_1571_64)))\n (= ?x61364 (_ bv0 1))))\n(assert\n (let ((?x138006 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1571_64))))))\n (let ((?x93890 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1571_64))) (_ bv2 64))))\n (not (= ?x93890 (bvmul (_ bv18446744073709551615 64) ?x138006))))))\n(assert\n (let ((?x138006 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1571_64))))))\n (let ((?x93890 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1571_64))) (_ bv2 64))))\n (let ((?x7953 (bvadd ?x93890 ?x138006)))\n (let ((?x41447 ((_ extract 63 63) ?x7953)))\n (let ((?x44406 (concat ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x41447 ?x7953)))\n (let ((?x186468 (bvmul (_ bv7378697629483820647 128) ?x44406)))\n (let (($x285066 (= (bvashr ((_ extract 127 64) ?x186468) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x186468))))))\n (not $x285066)))))))))\n(check-sat)\n",
+    "time": 1.4223992824554443,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=30, tm_sec=24, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            1.6603374481201172
+        ]
+    }
+}

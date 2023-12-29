@@ -1,0 +1,11 @@
+{
+    "filename": "wc",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun k!72537560 () (_ BitVec 64))\n(assert\n (bvule (_ bv10 64) k!72537560))\n(assert\n (let ((?x593981 ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!72537560)))))\n (bvule (_ bv10 61) ?x593981)))\n(assert\n (let ((?x755542 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!72537560)))))))\n (let ((?x776801 ((_ extract 127 67) ?x755542)))\n (bvule (_ bv10 61) ?x776801))))\n(assert\n (let ((?x755542 (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 64) k!72537560)))))))\n (let ((?x776801 ((_ extract 127 67) ?x755542)))\n (bvule (_ bv10 61) ((_ extract 127 67) (bvmul (_ bv14757395258967641293 128) (concat (_ bv0 67) ?x776801)))))))\n(check-sat)\n",
+    "time": 12.869006633758545,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=19, tm_min=35, tm_sec=26, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            15.07456350326538
+        ]
+    }
+}

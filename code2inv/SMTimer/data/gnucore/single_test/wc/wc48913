@@ -1,0 +1,11 @@
+{
+    "filename": "wc",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_c0000ff0_4801_64 () (_ BitVec 64))\n(assert\n (bvule (_ bv10 64) mem_c0000ff0_4801_64))\n(assert\n (let ((?x534534 (concat (_ bv0 64) mem_c0000ff0_4801_64)))\n (let ((?x255282 (bvmul (_ bv14757395258967641293 128) ?x534534)))\n (let ((?x336304 ((_ extract 127 67) ?x255282)))\n (bvule (_ bv10 61) ?x336304)))))\n(assert\n (let ((?x534534 (concat (_ bv0 64) mem_c0000ff0_4801_64)))\n (let ((?x255282 (bvmul (_ bv14757395258967641293 128) ?x534534)))\n (let ((?x336304 ((_ extract 127 67) ?x255282)))\n (let ((?x308180 (concat (_ bv0 67) ?x336304)))\n (let ((?x198670 (bvmul (_ bv14757395258967641293 128) ?x308180)))\n (let ((?x330618 ((_ extract 127 67) ?x198670)))\n (bvule (_ bv10 61) ?x330618))))))))\n(assert\n (let ((?x534534 (concat (_ bv0 64) mem_c0000ff0_4801_64)))\n (let ((?x255282 (bvmul (_ bv14757395258967641293 128) ?x534534)))\n (let ((?x336304 ((_ extract 127 67) ?x255282)))\n (let ((?x308180 (concat (_ bv0 67) ?x336304)))\n (let ((?x198670 (bvmul (_ bv14757395258967641293 128) ?x308180)))\n (let ((?x330618 ((_ extract 127 67) ?x198670)))\n (let ((?x665707 (concat (_ bv0 67) ?x330618)))\n (let ((?x190856 (bvmul (_ bv14757395258967641293 128) ?x665707)))\n (let ((?x580605 ((_ extract 127 67) ?x190856)))\n (let (($x727954 (bvule (_ bv10 61) ?x580605)))\n (not $x727954))))))))))))\n(check-sat)\n",
+    "time": 17.736175060272217,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=19, tm_min=30, tm_sec=38, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            51.239463567733765
+        ]
+    }
+}

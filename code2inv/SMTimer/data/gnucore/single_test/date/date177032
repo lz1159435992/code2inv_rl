@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mktime_69157_64 () (_ BitVec 64))\n(assert\n (let ((?x479042 ((_ extract 63 63) unconstrained_ret_mktime_69157_64)))\n (= ?x479042 (_ bv1 1))))\n(assert\n (let ((?x1382681 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_69157_64))))))\n (let ((?x791991 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_69157_64))) (_ bv2 64))))\n (not (= ?x791991 (bvmul (_ bv18446744073709551615 64) ?x1382681))))))\n(assert\n (let ((?x1382681 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_69157_64))))))\n (let ((?x791991 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_69157_64))) (_ bv2 64))))\n (let ((?x133089 (bvadd ?x791991 ?x1382681)))\n (let ((?x1578551 ((_ extract 63 63) ?x133089)))\n (let ((?x1628988 (concat ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x1578551 ?x133089)))\n (let ((?x1960647 (bvmul (_ bv7378697629483820647 128) ?x1628988)))\n (= (bvashr ((_ extract 127 64) ?x1960647) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x1960647)))))))))))\n(check-sat)\n",
+    "time": 2.396665573120117,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=6, tm_min=17, tm_sec=23, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            2.2270286083221436
+        ]
+    }
+}

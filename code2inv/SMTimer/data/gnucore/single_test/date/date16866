@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun tv_sec_1743_64 () (_ BitVec 64))\n(assert\n (let ((?x392820 ((_ extract 63 63) tv_sec_1743_64)))\n (= ?x392820 (_ bv0 1))))\n(assert\n (let ((?x26457 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1743_64))))))\n (let ((?x225524 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1743_64))) (_ bv2 64))))\n (not (= ?x225524 (bvmul (_ bv18446744073709551615 64) ?x26457))))))\n(assert\n (let ((?x26457 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1743_64))))))\n (let ((?x225524 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1743_64))) (_ bv2 64))))\n (let ((?x340924 (bvadd ?x225524 ?x26457)))\n (let ((?x16293 ((_ extract 63 63) ?x340924)))\n (let ((?x342689 (concat ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x16293 ?x340924)))\n (let ((?x394067 (bvmul (_ bv7378697629483820647 128) ?x342689)))\n (= (bvashr ((_ extract 127 64) ?x394067) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x394067)))))))))))\n(check-sat)\n",
+    "time": 1.8150427341461182,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=41, tm_sec=54, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            5.64340877532959
+        ]
+    }
+}

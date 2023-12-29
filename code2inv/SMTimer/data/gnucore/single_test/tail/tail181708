@@ -1,0 +1,11 @@
+{
+    "filename": "tail",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_lseek_5110_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_lseek_5164_64 () (_ BitVec 64))\n(assert\n (let ((?x1325851 ((_ extract 63 63) unconstrained_ret_lseek_5110_64)))\n (= ?x1325851 (_ bv0 1))))\n(assert\n (let ((?x2009097 ((_ extract 63 63) unconstrained_ret_lseek_5164_64)))\n (= ?x2009097 (_ bv0 1))))\n(assert\n (let ((?x1237788 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_lseek_5110_64)))\n (let ((?x1350173 (bvadd unconstrained_ret_lseek_5164_64 ?x1237788)))\n (not (= ((_ extract 63 63) ?x1350173) (_ bv0 1))))))\n(assert\n (let ((?x804549 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) unconstrained_ret_lseek_5110_64))))))\n (let ((?x2829659 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) unconstrained_ret_lseek_5110_64))) (_ bv2 64))))\n (not (= ?x2829659 (bvmul (_ bv18446744073709551615 64) ?x804549))))))\n(check-sat)\n",
+    "time": 4.39828896522522,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=5, tm_min=4, tm_sec=34, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            1.5244019031524658
+        ]
+    }
+}

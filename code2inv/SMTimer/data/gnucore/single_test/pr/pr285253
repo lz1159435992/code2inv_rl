@@ -1,0 +1,11 @@
+{
+    "filename": "pr",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_ffffffffffffff94_11700_32 () (_ BitVec 32))\n(assert\n (let (($x193398 (bvsle (_ bv4294965396 32) mem_ffffffffffffff94_11700_32)))\n (not $x193398)))\n(assert\n (let ((?x145397 (bvmul (_ bv4294967295 32) mem_ffffffffffffff94_11700_32)))\n (let ((?x311106 (bvadd (_ bv4294965396 32) ?x145397)))\n (let ((?x56736 (concat (_ bv0 32) ?x311106)))\n (let ((?x206894 (bvmul (_ bv3435973837 64) ?x56736)))\n (let ((?x145885 ((_ extract 63 35) ?x206894)))\n (let (($x60222 (= ?x145885 (_ bv0 29))))\n (not $x60222))))))))\n(assert\n (let ((?x145397 (bvmul (_ bv4294967295 32) mem_ffffffffffffff94_11700_32)))\n (let ((?x311106 (bvadd (_ bv4294965396 32) ?x145397)))\n (let ((?x56736 (concat (_ bv0 32) ?x311106)))\n (let ((?x206894 (bvmul (_ bv3435973837 64) ?x56736)))\n (let ((?x145885 ((_ extract 63 35) ?x206894)))\n (let ((?x47816 (concat (_ bv0 35) ?x145885)))\n (let ((?x234227 (bvmul (_ bv3435973837 64) ?x47816)))\n (let ((?x275207 ((_ extract 63 35) ?x234227)))\n (let (($x312666 (= ?x275207 (_ bv0 29))))\n (not $x312666)))))))))))\n(assert\n (let ((?x145397 (bvmul (_ bv4294967295 32) mem_ffffffffffffff94_11700_32)))\n (let ((?x311106 (bvadd (_ bv4294965396 32) ?x145397)))\n (let ((?x56736 (concat (_ bv0 32) ?x311106)))\n (let ((?x206894 (bvmul (_ bv3435973837 64) ?x56736)))\n (let ((?x145885 ((_ extract 63 35) ?x206894)))\n (let ((?x47816 (concat (_ bv0 35) ?x145885)))\n (let ((?x234227 (bvmul (_ bv3435973837 64) ?x47816)))\n (let ((?x275207 ((_ extract 63 35) ?x234227)))\n (let ((?x319625 (concat (_ bv0 35) ?x275207)))\n (let ((?x132162 (bvmul (_ bv3435973837 64) ?x319625)))\n (let ((?x192889 ((_ extract 63 35) ?x132162)))\n (= ?x192889 (_ bv0 29))))))))))))))\n(check-sat)\n",
+    "time": 1.1081774234771729,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=0, tm_min=48, tm_sec=40, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.5514910221099854
+        ]
+    }
+}

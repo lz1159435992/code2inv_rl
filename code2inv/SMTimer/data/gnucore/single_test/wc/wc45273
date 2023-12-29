@@ -1,0 +1,11 @@
+{
+    "filename": "wc",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_c0000ff0_4445_64 () (_ BitVec 64))\n(assert\n (bvule (_ bv10 64) mem_c0000ff0_4445_64))\n(assert\n (let ((?x759109 (concat (_ bv0 64) mem_c0000ff0_4445_64)))\n (let ((?x389233 (bvmul (_ bv14757395258967641293 128) ?x759109)))\n (let ((?x388062 ((_ extract 127 67) ?x389233)))\n (bvule (_ bv10 61) ?x388062)))))\n(assert\n (let ((?x759109 (concat (_ bv0 64) mem_c0000ff0_4445_64)))\n (let ((?x389233 (bvmul (_ bv14757395258967641293 128) ?x759109)))\n (let ((?x388062 ((_ extract 127 67) ?x389233)))\n (let ((?x272792 (concat (_ bv0 67) ?x388062)))\n (let ((?x639001 (bvmul (_ bv14757395258967641293 128) ?x272792)))\n (let ((?x501337 ((_ extract 127 67) ?x639001)))\n (bvule (_ bv10 61) ?x501337))))))))\n(check-sat)\n",
+    "time": 1.6720266342163086,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=18, tm_min=37, tm_sec=52, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            7.43957257270813
+        ]
+    }
+}

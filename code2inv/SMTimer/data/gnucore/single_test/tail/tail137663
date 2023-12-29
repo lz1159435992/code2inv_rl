@@ -1,0 +1,11 @@
+{
+    "filename": "tail",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_lseek_4101_64 () (_ BitVec 64))\n(declare-fun k!41681860 () Bool)\n(assert\n (let (($x1666901 (= unconstrained_ret_lseek_4101_64 (_ bv18446744073709551615 64))))\n (not $x1666901)))\n(assert\n (let (($x2019551 (= unconstrained_ret_lseek_4101_64 (_ bv9223372036854775807 64))))\n (or k!41681860 $x2019551)))\n(assert\n (not (= ((_ extract 63 63) unconstrained_ret_lseek_4101_64) (_ bv0 1))))\n(assert\n (let ((?x1262175 ((_ extract 63 63) unconstrained_ret_lseek_4101_64)))\n (let ((?x2021765 (concat ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 ?x1262175 unconstrained_ret_lseek_4101_64)))\n (let ((?x2025501 (bvmul (_ bv7378697629483820647 128) ?x2021765)))\n (let ((?x1504811 ((_ extract 127 127) ?x2025501)))\n (let ((?x2032137 (concat (_ bv0 63) ?x1504811)))\n (let ((?x793557 (bvmul (_ bv18446744073709551615 64) ?x2032137)))\n (let ((?x2035708 ((_ extract 127 64) ?x2025501)))\n (let ((?x2030860 (bvashr ?x2035708 (_ bv2 64))))\n (let (($x1682123 (= ?x2030860 ?x793557)))\n (not $x1682123)))))))))))\n(check-sat)\n",
+    "time": 5.653076887130737,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=1, tm_min=34, tm_sec=27, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.4135308265686035
+        ]
+    }
+}

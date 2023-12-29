@@ -1,0 +1,11 @@
+{
+    "filename": "touch",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mbrtowc_12145_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_12078_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_12213_64 () (_ BitVec 64))\n(assert\n (let (($x190311 (= (_ bv0 64) unconstrained_ret_mbrtowc_12145_64)))\n (not $x190311)))\n(assert\n (let (($x185728 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_12145_64)))\n (not $x185728)))\n(assert\n (let (($x120629 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_12145_64)))\n (not $x120629)))\n(assert\n (let (($x156095 (= (_ bv0 64) unconstrained_ret_mbrtowc_12078_64)))\n (not $x156095)))\n(assert\n (let (($x203978 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_12078_64)))\n (not $x203978)))\n(assert\n (let (($x206247 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_12078_64)))\n (not $x206247)))\n(assert\n (let (($x179064 (= (_ bv0 64) unconstrained_ret_mbrtowc_12213_64)))\n (not $x179064)))\n(assert\n (let (($x162447 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_12213_64)))\n (not $x162447)))\n(assert\n (let (($x196083 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_12213_64)))\n (not $x196083)))\n(assert\n (let ((?x159660 (bvadd (_ bv82 64) unconstrained_ret_mbrtowc_12078_64)))\n (let ((?x173102 (bvadd ?x159660 unconstrained_ret_mbrtowc_12145_64)))\n (let ((?x207060 (bvadd ?x173102 unconstrained_ret_mbrtowc_12213_64)))\n (let ((?x200220 ((_ extract 63 1) ?x207060)))\n (= (_ bv0 63) ?x200220))))))\n(assert\n (let ((?x200397 (bvadd unconstrained_ret_mbrtowc_12078_64 unconstrained_ret_mbrtowc_12145_64)))\n (let ((?x181477 (bvadd ?x200397 unconstrained_ret_mbrtowc_12213_64)))\n (let ((?x152901 (bvadd ?x181477 (_ bv82 64))))\n (let (($x16324 (and (distinct (_ bv1 64) ?x152901) true)))\n (let (($x5514 (and (distinct (_ bv0 64) ?x152901) true)))\n (and $x5514 $x16324)))))))\n(check-sat)\n",
+    "time": 11.08331298828125,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=19, tm_min=16, tm_sec=23, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            2.0895559787750244
+        ]
+    }
+}

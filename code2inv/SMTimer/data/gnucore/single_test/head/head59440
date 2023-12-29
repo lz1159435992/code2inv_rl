@@ -1,0 +1,11 @@
+{
+    "filename": "head",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_strtoumax_1609_64 () (_ BitVec 64))\n(assert\n (not (= ((_ extract 63 63) unconstrained_ret_strtoumax_1609_64) (_ bv0 1))))\n(assert\n (let ((?x891619 (concat (_ bv0 64) unconstrained_ret_strtoumax_1609_64)))\n (let ((?x1785924 (bvmul (_ bv14757395258967641293 128) ?x891619)))\n (let ((?x1701047 ((_ extract 127 67) ?x1785924)))\n (let (($x1686005 (= ?x1701047 (_ bv0 61))))\n (not $x1686005))))))\n(assert\n (let ((?x891619 (concat (_ bv0 64) unconstrained_ret_strtoumax_1609_64)))\n (let ((?x1785924 (bvmul (_ bv14757395258967641293 128) ?x891619)))\n (let ((?x1701047 ((_ extract 127 67) ?x1785924)))\n (let ((?x1754502 (concat (_ bv0 67) ?x1701047)))\n (let ((?x1755319 (bvmul (_ bv14757395258967641293 128) ?x1754502)))\n (let ((?x1729159 ((_ extract 127 67) ?x1755319)))\n (let (($x1704378 (= ?x1729159 (_ bv0 61))))\n (not $x1704378)))))))))\n(assert\n (let ((?x891619 (concat (_ bv0 64) unconstrained_ret_strtoumax_1609_64)))\n (let ((?x1785924 (bvmul (_ bv14757395258967641293 128) ?x891619)))\n (let ((?x1701047 ((_ extract 127 67) ?x1785924)))\n (let ((?x1754502 (concat (_ bv0 67) ?x1701047)))\n (let ((?x1755319 (bvmul (_ bv14757395258967641293 128) ?x1754502)))\n (let ((?x1729159 ((_ extract 127 67) ?x1755319)))\n (let ((?x1928911 (concat (_ bv0 67) ?x1729159)))\n (let ((?x1730929 (bvmul (_ bv14757395258967641293 128) ?x1928911)))\n (let ((?x92195 ((_ extract 127 67) ?x1730929)))\n (= ?x92195 (_ bv0 61))))))))))))\n(check-sat)\n",
+    "time": 50.99413585662842,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=22, tm_min=57, tm_sec=16, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            13.309294939041138
+        ]
+    }
+}

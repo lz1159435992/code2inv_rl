@@ -1,0 +1,11 @@
+{
+    "filename": "rmdir",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mbrtowc_8155_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_8042_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_8281_64 () (_ BitVec 64))\n(assert\n (let (($x57856 (= (_ bv0 64) unconstrained_ret_mbrtowc_8155_64)))\n (not $x57856)))\n(assert\n (let (($x76686 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_8155_64)))\n (not $x76686)))\n(assert\n (let (($x66137 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_8155_64)))\n (not $x66137)))\n(assert\n (let (($x19956 (= (_ bv0 64) unconstrained_ret_mbrtowc_8042_64)))\n (not $x19956)))\n(assert\n (let (($x98159 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_8042_64)))\n (not $x98159)))\n(assert\n (let (($x48824 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_8042_64)))\n (not $x48824)))\n(assert\n (let (($x75336 (= (_ bv0 64) unconstrained_ret_mbrtowc_8281_64)))\n (not $x75336)))\n(assert\n (let (($x21159 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_8281_64)))\n (not $x21159)))\n(assert\n (let (($x36828 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_8281_64)))\n (not $x36828)))\n(assert\n (let ((?x84981 (bvadd (_ bv30 64) unconstrained_ret_mbrtowc_8042_64)))\n (let ((?x98350 (bvadd ?x84981 unconstrained_ret_mbrtowc_8155_64)))\n (let ((?x37456 (bvadd ?x98350 unconstrained_ret_mbrtowc_8281_64)))\n (let (($x41470 (bvule (_ bv1 64) ?x37456)))\n (not $x41470))))))\n(assert\n (let ((?x69169 (bvadd unconstrained_ret_mbrtowc_8042_64 unconstrained_ret_mbrtowc_8155_64)))\n (let ((?x96875 (bvadd ?x69169 unconstrained_ret_mbrtowc_8281_64)))\n (let ((?x31835 (bvadd ?x96875 (_ bv576460752303357926 64))))\n (and (distinct (_ bv576460752303357896 64) ?x31835) true)))))\n(check-sat)\n",
+    "time": 3.218407392501831,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=2, tm_hour=0, tm_min=37, tm_sec=29, tm_wday=2, tm_yday=337, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            1.1685187816619873
+        ]
+    }
+}

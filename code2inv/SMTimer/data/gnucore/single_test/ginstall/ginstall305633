@@ -1,0 +1,11 @@
+{
+    "filename": "ginstall",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_7fffffffffefa08_5682_64 () (_ BitVec 64))\n(declare-fun mem_7fffffffffefa98_7142_64 () (_ BitVec 64))\n(assert\n (let ((?x54013 ((_ extract 3 0) mem_7fffffffffefa08_5682_64)))\n (let ((?x57542 (bvnot ?x54013)))\n (let ((?x44897 ((_ extract 4 4) mem_7fffffffffefa08_5682_64)))\n (let ((?x77879 ((_ extract 5 5) mem_7fffffffffefa08_5682_64)))\n (let ((?x30884 (bvnot ?x77879)))\n (let ((?x33391 ((_ extract 63 6) mem_7fffffffffefa08_5682_64)))\n (let ((?x103164 (concat (_ bv0 64) ?x33391 ?x30884 ?x44897 ?x57542)))\n (let ((?x107912 (bvurem ?x103164 (_ bv79 128))))\n (let ((?x51073 ((_ extract 59 0) ?x107912)))\n (= ?x51073 (_ bv61 60))))))))))))\n(assert\n (let ((?x235476 (concat (_ bv0 64) ((_ extract 63 6) mem_7fffffffffefa98_7142_64) (bvnot ((_ extract 5 5) mem_7fffffffffefa98_7142_64)) ((_ extract 4 4) mem_7fffffffffefa98_7142_64) (bvnot ((_ extract 3 0) mem_7fffffffffefa98_7142_64)))))\n (let ((?x237290 (concat ((_ extract 59 0) (bvurem ?x235476 (_ bv79 128))) (_ bv0 4))))\n (bvule ?x237290 (_ bv18446744070488320015 64)))))\n(assert\n (let ((?x235476 (concat (_ bv0 64) ((_ extract 63 6) mem_7fffffffffefa98_7142_64) (bvnot ((_ extract 5 5) mem_7fffffffffefa98_7142_64)) ((_ extract 4 4) mem_7fffffffffefa98_7142_64) (bvnot ((_ extract 3 0) mem_7fffffffffefa98_7142_64)))))\n (let ((?x237290 (concat ((_ extract 59 0) (bvurem ?x235476 (_ bv79 128))) (_ bv0 4))))\n (bvule (_ bv1264 64) ?x237290))))\n(check-sat)\n",
+    "time": 1.454399824142456,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=0, tm_min=32, tm_sec=54, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.8893587589263916
+        ]
+    }
+}

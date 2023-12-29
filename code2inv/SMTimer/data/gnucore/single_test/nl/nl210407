@@ -1,0 +1,11 @@
+{
+    "filename": "nl",
+    "script": "",
+    "time": 1.005220651626587,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=19, tm_min=40, tm_sec=46, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

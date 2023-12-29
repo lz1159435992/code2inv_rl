@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun tv_sec_1798_64 () (_ BitVec 64))\n(assert\n (let ((?x282717 ((_ extract 63 63) tv_sec_1798_64)))\n (= ?x282717 (_ bv0 1))))\n(assert\n (let ((?x215024 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1798_64))))))\n (let ((?x48957 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1798_64))) (_ bv2 64))))\n (not (= ?x48957 (bvmul (_ bv18446744073709551615 64) ?x215024))))))\n(assert\n (let ((?x215024 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1798_64))))))\n (let ((?x48957 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1798_64))) (_ bv2 64))))\n (let ((?x16522 (bvadd ?x48957 ?x215024)))\n (let ((?x301248 ((_ extract 63 63) ?x16522)))\n (let ((?x93587 (concat ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x301248 ?x16522)))\n (let ((?x319155 (bvmul (_ bv7378697629483820647 128) ?x93587)))\n (= (bvashr ((_ extract 127 64) ?x319155) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x319155)))))))))))\n(check-sat)\n",
+    "time": 8.950188636779785,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=45, tm_sec=37, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            5.860492944717407
+        ]
+    }
+}

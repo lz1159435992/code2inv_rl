@@ -1,0 +1,11 @@
+{
+    "filename": "factor",
+    "script": "",
+    "time": 1.0022852420806885,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=2, tm_hour=9, tm_min=48, tm_sec=18, tm_wday=2, tm_yday=337, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "filename": "expr",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_strtoimax_1323_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_strtoimax_2341_64 () (_ BitVec 64))\n(assert\n (let (($x18727 (= unconstrained_ret_strtoimax_1323_64 (_ bv0 64))))\n (not $x18727)))\n(assert\n (not (= unconstrained_ret_strtoimax_2341_64 (_ bv0 64))))\n(assert\n (let ((?x110440 ((_ extract 63 63) unconstrained_ret_strtoimax_1323_64)))\n (let ((?x454977 ((_ extract 63 63) unconstrained_ret_strtoimax_2341_64)))\n (let ((?x97553 (bvxor ?x454977 ?x110440)))\n (let ((?x501314 (bvmul unconstrained_ret_strtoimax_1323_64 unconstrained_ret_strtoimax_2341_64)))\n (let ((?x504725 ((_ extract 63 63) ?x501314)))\n (= ?x504725 ?x97553)))))))\n(assert\n (let ((?x110440 ((_ extract 63 63) unconstrained_ret_strtoimax_1323_64)))\n (let ((?x337638 (concat ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 ?x110440 unconstrained_ret_strtoimax_1323_64)))\n (let ((?x501314 (bvmul unconstrained_ret_strtoimax_1323_64 unconstrained_ret_strtoimax_2341_64)))\n (let ((?x443407 (bvashr ?x501314 (_ bv63 64))))\n (let ((?x202112 (concat ?x443407 ?x501314)))\n (let ((?x45113 (bvsdiv ?x202112 ?x337638)))\n (let ((?x576839 ((_ extract 63 0) ?x45113)))\n (= ?x576839 unconstrained_ret_strtoimax_2341_64)))))))))\n(check-sat)\n",
+    "time": 3.8825175762176514,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=12, tm_hour=17, tm_min=59, tm_sec=28, tm_wday=5, tm_yday=347, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

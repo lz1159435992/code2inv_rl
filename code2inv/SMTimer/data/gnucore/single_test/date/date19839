@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mktime_1924_64 () (_ BitVec 64))\n(assert\n (let ((?x45400 ((_ extract 63 63) unconstrained_ret_mktime_1924_64)))\n (= ?x45400 (_ bv1 1))))\n(assert\n (let ((?x130135 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_1924_64))))))\n (let ((?x32255 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_1924_64))) (_ bv2 64))))\n (let (($x131324 (= ?x32255 (bvmul (_ bv18446744073709551615 64) ?x130135))))\n (not $x131324)))))\n(assert\n (let ((?x130135 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_1924_64))))))\n (let ((?x32255 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv18446744073709551615 64) unconstrained_ret_mktime_1924_64))) (_ bv2 64))))\n (let ((?x119610 (bvadd ?x32255 ?x130135)))\n (let ((?x183572 ((_ extract 63 63) ?x119610)))\n (let ((?x169776 (concat ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x183572 ?x119610)))\n (let ((?x201802 (bvmul (_ bv7378697629483820647 128) ?x169776)))\n (= (bvashr ((_ extract 127 64) ?x201802) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x201802)))))))))))\n(check-sat)\n",
+    "time": 5.030667543411255,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=47, tm_sec=38, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            2.100623369216919
+        ]
+    }
+}

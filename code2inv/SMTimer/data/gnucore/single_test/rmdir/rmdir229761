@@ -1,0 +1,11 @@
+{
+    "filename": "rmdir",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mbrtowc_6381_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_6484_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_6278_64 () (_ BitVec 64))\n(assert\n (let (($x78727 (= (_ bv0 64) unconstrained_ret_mbrtowc_6381_64)))\n (not $x78727)))\n(assert\n (let (($x37231 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_6381_64)))\n (not $x37231)))\n(assert\n (let (($x84569 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_6381_64)))\n (not $x84569)))\n(assert\n (let (($x73225 (= (_ bv0 64) unconstrained_ret_mbrtowc_6484_64)))\n (not $x73225)))\n(assert\n (let (($x54568 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_6484_64)))\n (not $x54568)))\n(assert\n (let (($x43028 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_6484_64)))\n (not $x43028)))\n(assert\n (let (($x33503 (= (_ bv0 64) unconstrained_ret_mbrtowc_6278_64)))\n (not $x33503)))\n(assert\n (let (($x47672 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_6278_64)))\n (not $x47672)))\n(assert\n (let (($x9439 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_6278_64)))\n (not $x9439)))\n(assert\n (let ((?x73772 (bvadd (_ bv24 64) unconstrained_ret_mbrtowc_6278_64)))\n (let ((?x6092 (bvadd ?x73772 unconstrained_ret_mbrtowc_6381_64)))\n (let ((?x58905 (bvadd ?x6092 unconstrained_ret_mbrtowc_6484_64)))\n (let (($x36808 (bvule (_ bv1 64) ?x58905)))\n (not $x36808))))))\n(assert\n (let ((?x79054 (bvadd unconstrained_ret_mbrtowc_6278_64 unconstrained_ret_mbrtowc_6381_64)))\n (let ((?x23948 (bvadd ?x79054 unconstrained_ret_mbrtowc_6484_64)))\n (let ((?x37093 (bvadd ?x23948 (_ bv576460752303357920 64))))\n (and (distinct (_ bv576460752303357896 64) ?x37093) true)))))\n(check-sat)\n",
+    "time": 3.947805166244507,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=23, tm_min=43, tm_sec=19, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.7290284633636475
+        ]
+    }
+}

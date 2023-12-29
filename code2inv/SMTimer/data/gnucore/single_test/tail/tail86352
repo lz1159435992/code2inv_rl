@@ -1,0 +1,11 @@
+{
+    "filename": "tail",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_lseek_2666_64 () (_ BitVec 64))\n(declare-fun k!6545610 () Bool)\n(assert\n (let (($x40603 (= unconstrained_ret_lseek_2666_64 (_ bv18446744073709551615 64))))\n (not $x40603)))\n(assert\n (let (($x77587 (= unconstrained_ret_lseek_2666_64 (_ bv9223372036854775807 64))))\n (or k!6545610 $x77587)))\n(assert\n (not (= ((_ extract 63 63) unconstrained_ret_lseek_2666_64) (_ bv0 1))))\n(assert\n (let ((?x42159 ((_ extract 63 63) unconstrained_ret_lseek_2666_64)))\n (let ((?x81441 (concat ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 ?x42159 unconstrained_ret_lseek_2666_64)))\n (let ((?x30628 (bvmul (_ bv7378697629483820647 128) ?x81441)))\n (let ((?x54623 ((_ extract 127 127) ?x30628)))\n (let ((?x33792 (concat (_ bv0 63) ?x54623)))\n (let ((?x88742 ((_ extract 127 64) ?x30628)))\n (let ((?x97400 (bvashr ?x88742 (_ bv2 64))))\n (not (= ?x97400 (bvmul (_ bv18446744073709551615 64) ?x33792)))))))))))\n(check-sat)\n",
+    "time": 2.6495237350463867,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=59, tm_sec=16, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            1.5877633094787598
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "filename": "base64",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mbrtowc_2997_64 () (_ BitVec 64))\n(assert\n (let (($x36301230 (= unconstrained_ret_mbrtowc_2997_64 (_ bv0 64))))\n (not $x36301230)))\n(assert\n (not (= unconstrained_ret_mbrtowc_2997_64 (_ bv18446744073709551615 64))))\n(assert\n (let (($x36946248 (= unconstrained_ret_mbrtowc_2997_64 (_ bv18446744073709551614 64))))\n (not $x36946248)))\n(assert\n (= ((_ extract 63 1) unconstrained_ret_mbrtowc_2997_64) (_ bv0 63)))\n(check-sat)\n",
+    "time": 1.2384517192840576,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=20, tm_min=48, tm_sec=13, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.013325691223144531
+        ]
+    }
+}

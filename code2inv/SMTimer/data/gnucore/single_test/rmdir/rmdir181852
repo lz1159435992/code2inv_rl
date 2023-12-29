@@ -1,0 +1,11 @@
+{
+    "filename": "rmdir",
+    "script": "",
+    "time": 1.013512372970581,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=22, tm_min=59, tm_sec=37, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

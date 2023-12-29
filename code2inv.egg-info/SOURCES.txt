@@ -1,0 +1,8 @@
+README.md
+setup.py
+code2inv/__init__.py
+code2inv.egg-info/PKG-INFO
+code2inv.egg-info/SOURCES.txt
+code2inv.egg-info/dependency_links.txt
+code2inv.egg-info/requires.txt
+code2inv.egg-info/top_level.txt

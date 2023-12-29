@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun tv_sec_2338_64 () (_ BitVec 64))\n(assert\n (let ((?x1340845 ((_ extract 63 63) tv_sec_2338_64)))\n (= ?x1340845 (_ bv0 1))))\n(assert\n (let ((?x785934 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2338_64))))))\n (let ((?x640108 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2338_64))) (_ bv2 64))))\n (not (= ?x640108 (bvmul (_ bv18446744073709551615 64) ?x785934))))))\n(assert\n (let ((?x785934 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2338_64))))))\n (let ((?x640108 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_2338_64))) (_ bv2 64))))\n (let ((?x1899656 (bvadd ?x640108 ?x785934)))\n (let ((?x74345 ((_ extract 63 63) ?x1899656)))\n (let ((?x1925807 (concat ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x74345 ?x1899656)))\n (let ((?x931922 (bvmul (_ bv7378697629483820647 128) ?x1925807)))\n (let (($x199405 (= (bvashr ((_ extract 127 64) ?x931922) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x931922))))))\n (not $x199405)))))))))\n(check-sat)\n",
+    "time": 12.985281944274902,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=0, tm_min=4, tm_sec=52, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            6.879095077514648
+        ]
+    }
+}

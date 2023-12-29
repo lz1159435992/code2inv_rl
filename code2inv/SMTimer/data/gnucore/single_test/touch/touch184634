@@ -1,0 +1,11 @@
+{
+    "filename": "touch",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mbrtowc_4960_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_5032_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_mbrtowc_4871_64 () (_ BitVec 64))\n(assert\n (let (($x65653 (= (_ bv0 64) unconstrained_ret_mbrtowc_4960_64)))\n (not $x65653)))\n(assert\n (let (($x69902 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_4960_64)))\n (not $x69902)))\n(assert\n (let (($x67548 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_4960_64)))\n (not $x67548)))\n(assert\n (let (($x24132 (= (_ bv0 64) unconstrained_ret_mbrtowc_5032_64)))\n (not $x24132)))\n(assert\n (let (($x133161 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_5032_64)))\n (not $x133161)))\n(assert\n (let (($x55675 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_5032_64)))\n (not $x55675)))\n(assert\n (let (($x41561 (= (_ bv0 64) unconstrained_ret_mbrtowc_4871_64)))\n (not $x41561)))\n(assert\n (let (($x27534 (= (_ bv18446744073709551615 64) unconstrained_ret_mbrtowc_4871_64)))\n (not $x27534)))\n(assert\n (let (($x128754 (= (_ bv18446744073709551614 64) unconstrained_ret_mbrtowc_4871_64)))\n (not $x128754)))\n(assert\n (let ((?x94256 (bvadd (_ bv15 64) unconstrained_ret_mbrtowc_4871_64)))\n (let ((?x113934 (bvadd ?x94256 unconstrained_ret_mbrtowc_4960_64)))\n (let ((?x5411 (bvadd ?x113934 unconstrained_ret_mbrtowc_5032_64)))\n (let ((?x6836 ((_ extract 63 1) ?x5411)))\n (= (_ bv0 63) ?x6836))))))\n(assert\n (let ((?x77774 (bvadd unconstrained_ret_mbrtowc_4871_64 unconstrained_ret_mbrtowc_4960_64)))\n (let ((?x90494 (bvadd ?x77774 unconstrained_ret_mbrtowc_5032_64)))\n (let ((?x91060 (bvadd ?x90494 (_ bv15 64))))\n (let (($x14460 (and (distinct (_ bv1 64) ?x91060) true)))\n (let (($x86093 (and (distinct (_ bv0 64) ?x91060) true)))\n (and $x86093 $x14460)))))))\n(check-sat)\n",
+    "time": 17.536718368530273,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=11, tm_min=18, tm_sec=59, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            1.5382144451141357
+        ]
+    }
+}

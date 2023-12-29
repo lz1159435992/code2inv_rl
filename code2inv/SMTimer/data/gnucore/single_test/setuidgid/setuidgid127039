@@ -1,0 +1,11 @@
+{
+    "filename": "setuidgid",
+    "script": "",
+    "time": 1.0034642219543457,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=3, tm_hour=1, tm_min=21, tm_sec=9, tm_wday=3, tm_yday=338, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

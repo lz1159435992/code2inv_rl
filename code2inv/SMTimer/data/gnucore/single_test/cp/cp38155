@@ -1,0 +1,11 @@
+{
+    "filename": "cp",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun k!26387810 () (_ BitVec 3))\n(assert\n (not (= k!26387810 (_ bv0 3))))\n(assert\n (not (= ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!26387810))) (_ bv0 64))))\n(assert\n (let ((?x427292 ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!26387810)))))\n (let ((?x426300 (concat (_ bv0 64) ?x427292)))\n (let ((?x683408 (concat (_ bv0 125) k!26387810)))\n (let ((?x660692 ((_ extract 63 0) (bvurem ?x683408 ?x426300))))\n (not (= ?x660692 (_ bv0 64))))))))\n(assert\n (let ((?x427292 ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!26387810)))))\n (let ((?x426300 (concat (_ bv0 64) ?x427292)))\n (let ((?x683408 (concat (_ bv0 125) k!26387810)))\n (let ((?x660692 ((_ extract 63 0) (bvurem ?x683408 ?x426300))))\n (let ((?x679996 (concat (_ bv0 64) ?x660692)))\n (let ((?x680832 ((_ extract 63 0) (bvurem ?x426300 ?x679996))))\n (not (= ?x680832 (_ bv0 64))))))))))\n(assert\n (let ((?x427292 ((_ extract 63 0) (bvurem (_ bv8 128) (concat (_ bv0 125) k!26387810)))))\n (let ((?x426300 (concat (_ bv0 64) ?x427292)))\n (let ((?x683408 (concat (_ bv0 125) k!26387810)))\n (let ((?x660692 ((_ extract 63 0) (bvurem ?x683408 ?x426300))))\n (let ((?x679996 (concat (_ bv0 64) ?x660692)))\n (let ((?x680832 ((_ extract 63 0) (bvurem ?x426300 ?x679996))))\n (= ((_ extract 63 0) (bvurem ?x679996 (concat (_ bv0 64) ?x680832))) (_ bv0 64)))))))))\n(check-sat)\n",
+    "time": 5.169801235198975,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=2, tm_hour=21, tm_min=37, tm_sec=59, tm_wday=2, tm_yday=337, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.44326138496398926
+        ]
+    }
+}

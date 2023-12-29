@@ -1,0 +1,11 @@
+{
+    "filename": "md5sum",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_fread_unlocked_333_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_606_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_926_64 () (_ BitVec 64))\n(declare-fun k!1538890 () Bool)\n(assert\n (not (= unconstrained_ret_fread_unlocked_333_64 (_ bv4096 64))))\n(assert\n (let (($x934461 (= unconstrained_ret_fread_unlocked_333_64 (_ bv0 64))))\n (not $x934461)))\n(assert\n (let (($x2291411 (= unconstrained_ret_fread_unlocked_606_64 (bvadd (_ bv4096 64) (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_333_64)))))\n (not $x2291411)))\n(assert\n (let (($x599618 (= unconstrained_ret_fread_unlocked_606_64 (_ bv0 64))))\n (not $x599618)))\n(assert\n (let ((?x2456071 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_333_64)))\n (let ((?x1415348 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_606_64)))\n (let (($x1457069 (= unconstrained_ret_fread_unlocked_926_64 (bvadd (_ bv4096 64) (bvadd ?x1415348 ?x2456071)))))\n (not $x1457069)))))\n(assert\n (let (($x1435114 (= unconstrained_ret_fread_unlocked_926_64 (_ bv0 64))))\n (not $x1435114)))\n(assert\n k!1538890)\n(check-sat)\n",
+    "time": 1.6379828453063965,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=12, tm_hour=16, tm_min=47, tm_sec=26, tm_wday=5, tm_yday=347, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.01933002471923828
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_mktime_68823_64 () (_ BitVec 64))\n(assert\n (let ((?x889414 ((_ extract 63 63) unconstrained_ret_mktime_68823_64)))\n (let (($x639084 (= ?x889414 (_ bv1 1))))\n (not $x639084))))\n(assert\n (let ((?x889414 ((_ extract 63 63) unconstrained_ret_mktime_68823_64)))\n (let ((?x178432 (concat ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 ?x889414 unconstrained_ret_mktime_68823_64)))\n (let ((?x1303029 (bvmul (_ bv7378697629483820647 128) ?x178432)))\n (let ((?x775412 ((_ extract 127 127) ?x1303029)))\n (let ((?x247926 (concat (_ bv0 63) ?x775412)))\n (let ((?x411753 ((_ extract 127 64) ?x1303029)))\n (let ((?x1957683 (bvashr ?x411753 (_ bv2 64))))\n (not (= ?x1957683 (bvmul (_ bv18446744073709551615 64) ?x247926)))))))))))\n(check-sat)\n",
+    "time": 5.0040671825408936,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=4, tm_min=30, tm_sec=10, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.27431321144104004
+        ]
+    }
+}

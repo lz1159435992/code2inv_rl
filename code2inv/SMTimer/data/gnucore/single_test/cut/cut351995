@@ -1,0 +1,11 @@
+{
+    "filename": "cut",
+    "script": "",
+    "time": 1.0031983852386475,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=12, tm_hour=22, tm_min=58, tm_sec=29, tm_wday=5, tm_yday=347, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

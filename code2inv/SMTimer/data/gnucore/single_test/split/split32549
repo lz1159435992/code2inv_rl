@@ -1,0 +1,11 @@
+{
+    "filename": "split",
+    "script": "",
+    "time": 1.0015268325805664,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=22, tm_min=56, tm_sec=35, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}

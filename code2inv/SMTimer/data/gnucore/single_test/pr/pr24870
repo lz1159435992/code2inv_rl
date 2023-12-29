@@ -1,0 +1,11 @@
+{
+    "filename": "pr",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_ffffffffe0000a14_2792_32 () (_ BitVec 32))\n(assert\n (let (($x176076 (bvsle (_ bv4294965396 32) mem_ffffffffe0000a14_2792_32)))\n (not $x176076)))\n(assert\n (let ((?x160232 (bvmul (_ bv4294967295 32) mem_ffffffffe0000a14_2792_32)))\n (let ((?x118514 (bvadd (_ bv4294965396 32) ?x160232)))\n (let ((?x223193 (concat (_ bv0 32) ?x118514)))\n (let ((?x65417 (bvmul (_ bv3435973837 64) ?x223193)))\n (let ((?x47166 ((_ extract 63 35) ?x65417)))\n (let (($x104576 (= ?x47166 (_ bv0 29))))\n (not $x104576))))))))\n(assert\n (let ((?x160232 (bvmul (_ bv4294967295 32) mem_ffffffffe0000a14_2792_32)))\n (let ((?x118514 (bvadd (_ bv4294965396 32) ?x160232)))\n (let ((?x223193 (concat (_ bv0 32) ?x118514)))\n (let ((?x65417 (bvmul (_ bv3435973837 64) ?x223193)))\n (let ((?x47166 ((_ extract 63 35) ?x65417)))\n (let ((?x137121 (concat (_ bv0 35) ?x47166)))\n (let ((?x115570 (bvmul (_ bv3435973837 64) ?x137121)))\n (let ((?x82404 ((_ extract 63 35) ?x115570)))\n (let (($x126486 (= ?x82404 (_ bv0 29))))\n (not $x126486)))))))))))\n(assert\n (let ((?x160232 (bvmul (_ bv4294967295 32) mem_ffffffffe0000a14_2792_32)))\n (let ((?x118514 (bvadd (_ bv4294965396 32) ?x160232)))\n (let ((?x223193 (concat (_ bv0 32) ?x118514)))\n (let ((?x65417 (bvmul (_ bv3435973837 64) ?x223193)))\n (let ((?x47166 ((_ extract 63 35) ?x65417)))\n (let ((?x137121 (concat (_ bv0 35) ?x47166)))\n (let ((?x115570 (bvmul (_ bv3435973837 64) ?x137121)))\n (let ((?x82404 ((_ extract 63 35) ?x115570)))\n (let ((?x76911 (concat (_ bv0 35) ?x82404)))\n (let ((?x89277 (bvmul (_ bv3435973837 64) ?x76911)))\n (let ((?x132361 ((_ extract 63 35) ?x89277)))\n (= ?x132361 (_ bv0 29))))))))))))))\n(check-sat)\n",
+    "time": 1.0063714981079102,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=42, tm_sec=33, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.6138639450073242
+        ]
+    }
+}

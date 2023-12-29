@@ -1,0 +1,11 @@
+{
+    "filename": "cp",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun mem_7fffffffffef858_3575_64 () (_ BitVec 64))\n(assert\n (let (($x101212 (bvsle mem_7fffffffffef858_3575_64 (_ bv0 64))))\n (not $x101212)))\n(assert\n (let ((?x476870 ((_ extract 63 62) mem_7fffffffffef858_3575_64)))\n (= ?x476870 (_ bv0 2))))\n(assert\n (let ((?x477457 ((_ extract 61 0) mem_7fffffffffef858_3575_64)))\n (bvule ?x477457 (_ bv2305843009213693952 62))))\n(assert\n (let (($x423114 (= mem_7fffffffffef858_3575_64 (_ bv0 64))))\n (not $x423114)))\n(assert\n (let ((?x84522 (concat (_ bv0 64) mem_7fffffffffef858_3575_64)))\n (let ((?x31399 (bvurem (_ bv512 128) ?x84522)))\n (let ((?x29256 ((_ extract 63 0) ?x31399)))\n (let (($x494618 (= ?x29256 (_ bv0 64))))\n (not $x494618))))))\n(assert\n (let ((?x84522 (concat (_ bv0 64) mem_7fffffffffef858_3575_64)))\n (let ((?x31399 (bvurem (_ bv512 128) ?x84522)))\n (let ((?x29256 ((_ extract 63 0) ?x31399)))\n (let ((?x5216 (concat (_ bv0 64) ?x29256)))\n (let ((?x7913 (bvurem ?x84522 ?x5216)))\n (let ((?x23183 ((_ extract 63 0) ?x7913)))\n (= ?x23183 (_ bv0 64)))))))))\n(check-sat)\n",
+    "time": 1.378143072128296,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=2, tm_hour=22, tm_min=33, tm_sec=24, tm_wday=2, tm_yday=337, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.6152787208557129
+        ]
+    }
+}

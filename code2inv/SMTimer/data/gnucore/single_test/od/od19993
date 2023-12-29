@@ -1,0 +1,11 @@
+{
+    "filename": "od",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_fread_unlocked_970_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_1360_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_1748_64 () (_ BitVec 64))\n(assert\n (let (($x34960 (= unconstrained_ret_fread_unlocked_970_64 (_ bv16 64))))\n (not $x34960)))\n(assert\n (let ((?x32793 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_970_64)))\n (let ((?x33950 (bvadd (_ bv16 64) ?x32793)))\n (let (($x3947 (= unconstrained_ret_fread_unlocked_1360_64 ?x33950)))\n (not $x3947)))))\n(assert\n (let ((?x21005 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_1360_64)))\n (let ((?x32793 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_970_64)))\n (= unconstrained_ret_fread_unlocked_1748_64 (bvadd (_ bv16 64) (bvadd ?x32793 ?x21005))))))\n(assert\n (let ((?x17334 (bvadd unconstrained_ret_fread_unlocked_970_64 unconstrained_ret_fread_unlocked_1360_64)))\n (let ((?x51307 (bvadd ?x17334 unconstrained_ret_fread_unlocked_1748_64)))\n (bvule (_ bv16 64) ?x51307))))\n(assert\n (let ((?x48736 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_1748_64)))\n (let ((?x21005 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_1360_64)))\n (= unconstrained_ret_fread_unlocked_970_64 (bvadd (_ bv16 64) (bvadd ?x21005 ?x48736))))))\n(assert\n (let ((?x17334 (bvadd unconstrained_ret_fread_unlocked_970_64 unconstrained_ret_fread_unlocked_1360_64)))\n (let ((?x51307 (bvadd ?x17334 unconstrained_ret_fread_unlocked_1748_64)))\n (let ((?x54465 (bvadd (_ bv16 64) ?x51307)))\n (not (= ((_ extract 63 3) ?x54465) (_ bv0 61)))))))\n(assert\n (let ((?x17334 (bvadd unconstrained_ret_fread_unlocked_970_64 unconstrained_ret_fread_unlocked_1360_64)))\n (let ((?x51307 (bvadd ?x17334 unconstrained_ret_fread_unlocked_1748_64)))\n (let ((?x54465 (bvadd (_ bv16 64) ?x51307)))\n (not (= ((_ extract 63 6) ?x54465) (_ bv0 58)))))))\n(check-sat)\n",
+    "time": 1.779111623764038,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=13, tm_hour=4, tm_min=21, tm_sec=15, tm_wday=6, tm_yday=348, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            2.587350845336914
+        ]
+    }
+}

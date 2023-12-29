@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun tv_sec_1632_64 () (_ BitVec 64))\n(assert\n (let ((?x256868 ((_ extract 63 63) tv_sec_1632_64)))\n (= ?x256868 (_ bv0 1))))\n(assert\n (let ((?x280217 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1632_64))))))\n (let ((?x244683 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1632_64))) (_ bv2 64))))\n (not (= ?x244683 (bvmul (_ bv18446744073709551615 64) ?x280217))))))\n(assert\n (let ((?x280217 (concat (_ bv0 63) ((_ extract 127 127) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1632_64))))))\n (let ((?x244683 (bvashr ((_ extract 127 64) (bvmul (_ bv7378697629483820647 128) (concat (_ bv0 64) tv_sec_1632_64))) (_ bv2 64))))\n (let ((?x258117 (bvadd ?x244683 ?x280217)))\n (let ((?x333914 ((_ extract 63 63) ?x258117)))\n (let ((?x190707 (concat ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x333914 ?x258117)))\n (let ((?x158795 (bvmul (_ bv7378697629483820647 128) ?x190707)))\n (= (bvashr ((_ extract 127 64) ?x158795) (_ bv2 64)) (bvmul (_ bv18446744073709551615 64) (concat (_ bv0 63) ((_ extract 127 127) ?x158795)))))))))))\n(check-sat)\n",
+    "time": 7.00942850112915,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=11, tm_mday=30, tm_hour=21, tm_min=36, tm_sec=21, tm_wday=0, tm_yday=335, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            11.461181402206421
+        ]
+    }
+}

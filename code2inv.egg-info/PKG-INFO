@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: code2inv
+Version: 0.0.0
+Requires-Dist: torch
+Requires-Dist: pysmt
+Requires-Dist: numpy
+Requires-Dist: future
+Requires-Dist: tqdm

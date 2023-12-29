@@ -1,0 +1,11 @@
+{
+    "filename": "od",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun unconstrained_ret_fread_unlocked_707_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_1269_64 () (_ BitVec 64))\n(declare-fun unconstrained_ret_fread_unlocked_1686_64 () (_ BitVec 64))\n(assert\n (not (= unconstrained_ret_fread_unlocked_707_64 (_ bv16 64))))\n(assert\n (let ((?x20561 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_707_64)))\n (let ((?x25446 (bvadd (_ bv16 64) ?x20561)))\n (not (= unconstrained_ret_fread_unlocked_1269_64 ?x25446)))))\n(assert\n (let ((?x35131 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_1269_64)))\n (let ((?x20561 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_707_64)))\n (= unconstrained_ret_fread_unlocked_1686_64 (bvadd (_ bv16 64) (bvadd ?x20561 ?x35131))))))\n(assert\n (let ((?x35615 (bvadd unconstrained_ret_fread_unlocked_707_64 unconstrained_ret_fread_unlocked_1269_64)))\n (let ((?x25370 (bvadd ?x35615 unconstrained_ret_fread_unlocked_1686_64)))\n (bvule (_ bv16 64) ?x25370))))\n(assert\n (let ((?x50248 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_1686_64)))\n (let ((?x35131 (bvmul (_ bv18446744073709551615 64) unconstrained_ret_fread_unlocked_1269_64)))\n (let (($x23584 (= unconstrained_ret_fread_unlocked_707_64 (bvadd (_ bv16 64) (bvadd ?x35131 ?x50248)))))\n (not $x23584)))))\n(check-sat)\n",
+    "time": 1.1517307758331299,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=13, tm_hour=4, tm_min=9, tm_sec=22, tm_wday=6, tm_yday=348, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.9882872104644775
+        ]
+    }
+}

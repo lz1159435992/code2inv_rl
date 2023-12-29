@@ -1,0 +1,11 @@
+{
+    "filename": "date",
+    "script": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun k!128632210 () (_ BitVec 32))\n(assert\n (let ((?x440135 (bvadd (_ bv6 32) k!128632210)))\n (let ((?x485786 ((_ extract 31 31) ?x440135)))\n (let ((?x1204690 (concat ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x485786 ?x440135)))\n (let ((?x257317 (bvadd (_ bv6 32) (bvadd ((_ extract 63 32) (bvmul (_ bv18446744071868851347 64) ?x1204690)) k!128632210))))\n (let ((?x348741 ((_ extract 31 31) ?x257317)))\n (let ((?x1029062 (concat ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x348741 ?x257317)))\n (let ((?x377192 (bvashr ?x1029062 (_ bv2 64))))\n (let ((?x396790 (bvadd k!128632210 (bvmul (_ bv4294967295 32) (concat (bvadd ((_ extract 28 0) ?x377192) (concat (_ bv0 28) ?x348741)) (_ bv0 3))))))\n (let ((?x1582122 ((_ extract 31 31) (bvadd (_ bv7 32) (bvadd ?x396790 (bvadd ((_ extract 31 0) ?x377192) (concat (_ bv0 31) ?x348741)))))))\n (= ?x1582122 (_ bv1 1))))))))))))\n(check-sat)\n",
+    "time": 1.4700682163238525,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=1, tm_hour=1, tm_min=28, tm_sec=57, tm_wday=1, tm_yday=336, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            0.033956289291381836
+        ]
+    }
+}

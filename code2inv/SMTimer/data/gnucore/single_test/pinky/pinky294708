@@ -1,0 +1,11 @@
+{
+    "filename": "pinky",
+    "script": "",
+    "time": 1.0060083866119385,
+    "stamp": "time.struct_time(tm_year=2020, tm_mon=12, tm_mday=4, tm_hour=5, tm_min=41, tm_sec=0, tm_wday=4, tm_yday=339, tm_isdst=0)",
+    "solving_time_dic": {
+        "z3": [
+            -1
+        ]
+    }
+}
